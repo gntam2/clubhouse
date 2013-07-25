@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   end
 
   def location
-    city + ", " + state
+    text + ", " + username + ", " + created_at
   end
 
   has_many :post

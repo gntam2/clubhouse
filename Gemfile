@@ -6,6 +6,7 @@ gem 'haml'
 gem 'activerecord'
 gem 'sinatra-activerecord'
 gem 'rake'
+gem 'carrierwave-activerecord'
 
 group :development do
   gem 'sqlite3'
