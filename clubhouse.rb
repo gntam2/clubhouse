@@ -3,7 +3,7 @@ require 'sinatra'
 require 'haml'
 
 require 'sinatra/activerecord'
-configure(:development){ set :database, "sqlite3:///fake_twitter.sqlite3" }
+configure(:development){ set :database, "sqlite3:///clubhouse.sqlite3" }
 require './models'
 
 get '/' do 
