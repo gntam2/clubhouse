@@ -2,6 +2,16 @@ body{
 	background-image: url('/img/bg.png');
 }
 
-.header{
-	color: blue;
+.wrapper1{
+	margin-top: 50px;
+	background-color: #00648c;
+	width: 400px;
+	height: 400px;
+	color: white;
+}
+
+.text{
+	padding-top: 20px;
+	margin-left: 200px auto;
+	font-size: 2.5em;
 }
