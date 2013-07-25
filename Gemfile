@@ -6,7 +6,8 @@ gem 'haml'
 gem 'activerecord'
 gem 'sinatra-activerecord'
 gem 'rake'
-gem 'carrierwave-activerecord'
+gem 'carrierwave-activerecord', :git => "git@github.com:richardkmichael/carrierwave-activerecord.git"
+
 
 group :development do
   gem 'sqlite3'
