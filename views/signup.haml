@@ -1,0 +1,17 @@
+.container-mine
+	.wrapper-one
+		.title-intro Clubhouse
+		.login.wrapper-one
+			%form.login-form{:name => "login_form", :method => "post"}
+				%label{:for => "username"}
+				%input{:type => "text", :name => "username", :class => "text", :placeholder => "Username"}
+				%br
+				%label{:for => "password"}
+				%input{:type => "password", :name => "password", :class => "password", :placeholder => "Password"}
+				%br
+				%input.login-submit{:type => "submit", :value => "Login", :class => "btn-custom"}
+				%br
+				%br
+				%br
+				%br
+				%input.login-signup{:type => "submit", :value => "Sign Up", :class => "btn-custom"}

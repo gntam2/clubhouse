@@ -6,14 +6,14 @@ require 'sinatra/activerecord'
 configure(:development){ set :database, "sqlite3:///clubhouse.sqlite3" }
 require './models'
 
+get '/login' do 
+	haml :login
+end
+
+get '/signup' do
+	haml :signup
+end
+
 get '/' do 
-	haml :home
-end
-
-get '/sign_up' do
-	haml :sign_up
-end
-
-get '/profile' do 
 	haml :profile
 end
