@@ -6,11 +6,7 @@ require 'sinatra/activerecord'
 configure(:development){ set :database, "sqlite3:///clubhouse.sqlite3" }
 require './models'
 
-HEAD
-get '/login' do 
-	haml :login
-
-require 'carrierwave-activerecord'
+require 'carrierwave'
 
 class MyUploader < Carrierwave::Uploader::Base
 	storage :file
@@ -25,7 +21,10 @@ uploader.store!(file)
 
 get '/' do 
 	haml :home
-new gem and clubhouse
+end
+
+get '/login' do 
+	haml :login
 end
 
 get '/signup' do
